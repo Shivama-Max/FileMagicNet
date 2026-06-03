@@ -17,12 +17,12 @@
       Includes async support, custom signature registration, and MIME type resolution.
     </Description>
     <PackageTags>magic-bytes;file-validation;mime;file-detection;file-signature;content-type</PackageTags>
-    <PackageProjectUrl>https://github.com/YourUsername/FileMagicNet</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/YourUsername/FileMagicNet</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Shivama-Max/FileMagicNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Shivama-Max/FileMagicNet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Copyright>Copyright © 2025 YourName</Copyright>
+    <Copyright>Copyright © 2025 Shivama</Copyright>
 
     <!-- Source Link for better debugging experience -->
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
