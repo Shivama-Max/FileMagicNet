@@ -10,7 +10,7 @@
     <!-- NuGet metadata -->
     <PackageId>FileMagicNet</PackageId>
     <Version>1.0.0</Version>
-    <Authors>YourName</Authors>
+    <Authors>Shivama</Authors>
     <Description>
       A modern, actively maintained .NET library for file type detection using magic bytes (file signatures).
       Supports 60+ file formats across images, documents, archives, media, executables, and fonts.
