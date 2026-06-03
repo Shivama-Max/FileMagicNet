@@ -1,10 +1,5 @@
 # FileMagicNet
 
-[![NuGet](https://img.shields.io/nuget/v/FileMagicNet.svg)](https://www.nuget.org/packages/FileMagicNet)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/FileMagicNet.svg)](https://www.nuget.org/packages/FileMagicNet)
-[![Build](https://github.com/YourUsername/FileMagicNet/actions/workflows/ci.yml/badge.svg)](https://github.com/YourUsername/FileMagicNet/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
 A modern, actively maintained .NET library for file type detection using **magic bytes** (file signatures). Never trust a file extension — validate the actual content.
 
 ## Features
@@ -16,7 +11,7 @@ A modern, actively maintained .NET library for file type detection using **magic
 - ✅ Offset-aware matching (e.g. MP4, HEIC)
 - ✅ Custom signature registration
 - ✅ No external dependencies
-- ✅ Targets .NET 6, 7, and 8
+- ✅ Targets .NET 10
 
 ## Installation
 
@@ -134,12 +129,3 @@ public async Task<IActionResult> Upload(IFormFile file)
 
     // proceed with safe upload...
 }
-```
-
-## Contributing
-
-Contributions are welcome! To add a new signature, open a PR adding it to the appropriate file in `src/FileMagicNet/Signatures/`. Please include the hex bytes, offset, a reference source, and a test case.
-
-## License
-
-MIT © YourName
