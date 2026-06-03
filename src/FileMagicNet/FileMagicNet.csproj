@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net7.0;net8.0;net10.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <LangVersion>14.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <!-- NuGet metadata -->
+    <PackageId>FileMagicNet</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>YourName</Authors>
+    <Description>
+      A modern, actively maintained .NET library for file type detection using magic bytes (file signatures).
+      Supports 60+ file formats across images, documents, archives, media, executables, and fonts.
+      Includes async support, custom signature registration, and MIME type resolution.
+    </Description>
+    <PackageTags>magic-bytes;file-validation;mime;file-detection;file-signature;content-type</PackageTags>
+    <PackageProjectUrl>https://github.com/YourUsername/FileMagicNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/YourUsername/FileMagicNet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Copyright>Copyright © 2025 YourName</Copyright>
+
+    <!-- Source Link for better debugging experience -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <!-- NativeAOT & Trimming support for .NET 10+ -->
+    <PublishTrimmed Condition="'$(TargetFramework)' == 'net10.0'">true</PublishTrimmed>
+    <PublishAot Condition="'$(TargetFramework)' == 'net10.0'">true</PublishAot>
+    <TrimMode Condition="'$(TargetFramework)' == 'net10.0'">partial</TrimMode>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
